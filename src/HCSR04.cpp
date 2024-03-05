@@ -22,7 +22,7 @@ HCSR04::~HCSR04()
 float HCSR04::dist(int n) const
 {
 	digitalWrite(this->out, LOW);
-	delayMicroseconds(2);
+	delayMicroseconds(4);
 	digitalWrite(this->out, HIGH);
 	delayMicroseconds(10);
 	digitalWrite(this->out, LOW);
